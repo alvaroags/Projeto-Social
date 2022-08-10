@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 body{
     height: 100vh;
@@ -11,6 +11,7 @@ main{
     position: relative;
     height: 100vh;
     background: url(../imagens/fundo-madeira.jpg) no-repeat fixed center;
+    background-size: cover;
 }
 #tel{
     position: absolute;
@@ -23,6 +24,7 @@ main{
 }
 #menu{
     position: absolute;
+    right: 0%;
     top: 50%;
     transform: translate(0,-50%);
 }
@@ -35,9 +37,17 @@ img{
     transition: .2s;
 }
 #menu img:hover{
-    border: 2px solid rgb(197, 197, 197);
-    transform: translate(3px, -3px);
+    border: 2px solid rgb(163, 163, 163);
+    transform: translate(-3px, -3px);
     transition: transform .2s;
     transition: border .1s;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.473);
+}
+iframe{
+    position: absolute;
+    top: 80px;
+    left: 22px;
+    width: 263px;
+    height: 468px;
+    margin: 0px;
 }
